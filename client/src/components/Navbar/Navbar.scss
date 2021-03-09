@@ -1,0 +1,38 @@
+@import '../../utils/colors.scss';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      font-size: 3rem;
+      color: $accent-color !important;
+      margin-right: 15px;
+    }
+
+    &-title {
+      font-size: 1.3rem;
+      color: $black;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-right: 15px;
+      color: $black;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
