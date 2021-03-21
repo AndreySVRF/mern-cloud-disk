@@ -1,5 +1,6 @@
 {
   "serverPort": 5000,
   "dbUrl": "mongodb+srv://js-developer:js-developer27@cloud-disk.2hx5s.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  "secretKey": "mern-cloud-disk-key"
+  "secretKey": "mern-cloud-disk-key",
+  "filePath": "C:\\www\\js\\mern-cloud-disk\\server\\files"
 }
