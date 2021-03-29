@@ -32,10 +32,12 @@ export const login = (email, password) => {
       dispatch(setUser(response.data.user));
       localStorage.setItem('token', response.data.token);
     } catch (e) {
-      if ('error' in e.response.data) {
-        dispatch(setAlert('error', e.response.data.error.errors));
-      } else {
-        dispatch(setAlert('error', e.response.data.message));
+      if (e.response) {
+        if ('error' in e.response.data) {
+          dispatch(setAlert('error', e.response.data.error.errors));
+        } else {
+          dispatch(setAlert('error', e.response.data.message));
+        }
       }
     }
   };
